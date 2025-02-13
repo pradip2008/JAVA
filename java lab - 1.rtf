@@ -1,0 +1,329 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs30\lang9 NAME : SHIYAL PRADIP J.\par
+CLASS : D\par
+ROLL NO : 29\par
+SUBJECT : JAVA\par
+\par
+
+\pard\sa200\sl276\slmult1\qc LABASSIGNMENT - 1\par
+\par
+
+\pard\sa200\sl276\slmult1     1. Program to print your first name, middle name, last name, DOB, class, division, contact number, email id: \par
+\b0 public class BasicDetails \{\par
+    public static void main(String[] args) \{\par
+\par
+        String firstName = "shiyal";\par
+        String middleName = "pradip";\par
+        String lastName = "j";\par
+        String dob = "05/06/2006";\par
+        String className = "D";\par
+        String division = "D";\par
+        String contactNumber = "1234561234";\par
+        String emailId = "pradipshiyal@00.com";\par
+\par
+        System.out.println("First Name: " + firstName);\par
+        System.out.println("Middle Name: " + middleName);\par
+        System.out.println("Last Name: " + lastName);\par
+        System.out.println("Date of Birth: " + dob);\par
+        System.out.println("Class: " + className);\par
+        System.out.println("Division: " + division);\par
+        System.out.println("Contact Number: " + contactNumber);\par
+        System.out.println("Email ID: " + emailId);\par
+    \}\par
+\}\par
+/*\tab Output\par
+First Name: shiyal\par
+Middle Name: pradip\par
+Last Name: j\par
+Date of Birth: 05/06/2006\par
+Class: D\par
+Division: D\par
+Contact Number: 1234561234\par
+Email ID: pradipshiyal@00.com\tab */\par
+\par
+    \b 2. Program to demonstrate all data types:\b0  \par
+public class DataTypesDemo \{\par
+    public static void main(String[] args) \{\par
+        int integerVar = 10;\par
+        double doubleVar = 5.5;\par
+        char charVar = 'A';\par
+        boolean boolVar = true;\par
+        String stringVar = "Hello";\par
+        float floatVar = 10.5f;\par
+        long longVar = 1234567890L;\par
+        short shortVar = 123;\par
+        byte byteVar = 100;\par
+\par
+        System.out.println("Integer: " + integerVar);\par
+        System.out.println("Double: " + doubleVar);\par
+        System.out.println("Char: " + charVar);\par
+        System.out.println("Boolean: " + boolVar);\par
+        System.out.println("String: " + stringVar);\par
+        System.out.println("Float: " + floatVar);\par
+        System.out.println("Long: " + longVar);\par
+        System.out.println("Short: " + shortVar);\par
+        System.out.println("Byte: " + byteVar);\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+Integer: 10\par
+Double: 5.5\par
+Char: A\par
+Boolean: true\par
+String: Hello\par
+Float: 10.5\par
+Long: 1234567890\par
+Short: 123\par
+Byte: 100\tab */\par
+\par
+    \b 3. Program to demonstrate all types of literals:\b0  \par
+public class LiteralsDemo \{\par
+    public static void main(String[] args) \{\par
+        int intLiteral = 10;\par
+        float floatLiteral = 10.5f;\par
+        double doubleLiteral = 20.5;\par
+        char charLiteral = 'A';\par
+        String stringLiteral = "Hello";\par
+        boolean boolLiteral = true;\par
+        long longLiteral = 1234567890L;\par
+        byte byteLiteral = 100;\par
+        short shortLiteral = 1000;\par
+        double hexLiteral = 0x2A;  // Hexadecimal literal\par
+        double binaryLiteral = 0b101010;  // Binary literal\par
+\par
+        System.out.println("Integer Literal: " + intLiteral);\par
+        System.out.println("Float Literal: " + floatLiteral);\par
+        System.out.println("Double Literal: " + doubleLiteral);\par
+        System.out.println("Char Literal: " + charLiteral);\par
+        System.out.println("String Literal: " + stringLiteral);\par
+        System.out.println("Boolean Literal: " + boolLiteral);\par
+        System.out.println("Long Literal: " + longLiteral);\par
+        System.out.println("Byte Literal: " + byteLiteral);\par
+        System.out.println("Short Literal: " + shortLiteral);\par
+        System.out.println("Hexadecimal Literal: " + hexLiteral);\par
+        System.out.println("Binary Literal: " + binaryLiteral);\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+Integer Literal: 10\par
+Float Literal: 10.5\par
+Double Literal: 20.5\par
+Char Literal: A\par
+String Literal: Hello\par
+Boolean Literal: true\par
+Long Literal: 1234567890\par
+Byte Literal: 100\par
+Short Literal: 1000\par
+Hexadecimal Literal: 42.0\par
+Binary Literal: 42.0\tab */\b\par
+\par
+    4. Program to calculate the area of a circle: \par
+\b0 import java.util.Scanner;\par
+\par
+public class CircleArea \{\par
+    public static void main(String[] args) \{\par
+        Scanner scanner = new Scanner(System.in);\par
+        System.out.print("Enter radius of the circle: ");\par
+        double radius = scanner.nextDouble();\par
+        double area = Math.PI * radius * radius;\par
+        System.out.println("Area of the circle: " + area);\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+Enter radius of the circle: 5\par
+Area of the circle: 78.53981633974483\tab */\b\par
+\par
+    5. *Program to perform all arithmetic operations (+, -, , /, %): \par
+import java.util.Scanner;\par
+\b0\par
+public class ArithmeticOperations \{\par
+    public static void main(String[] args) \{\par
+        Scanner scanner = new Scanner(System.in);\par
+        System.out.print("Enter first number: ");\par
+        int num1 = scanner.nextInt();\par
+        System.out.print("Enter second number: ");\par
+        int num2 = scanner.nextInt();\par
+\par
+        System.out.println("Addition: " + (num1 + num2));\par
+        System.out.println("Subtraction: " + (num1 - num2));\par
+        System.out.println("Multiplication: " + (num1 * num2));\par
+        System.out.println("Division: " + (num1 / num2));\par
+        System.out.println("Modulus: " + (num1 % num2));\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+Enter first number: 10\par
+Enter second number: 5\par
+Addition: 15\par
+Subtraction: 5\par
+Multiplication: 50\par
+Division: 2\par
+Modulus: 0\tab\tab */\par
+\b\par
+    6. Program to calculate the area of a triangle: \par
+import java.util.Scanner;\b0\par
+\par
+public class TriangleArea \{\par
+    public static void main(String[] args) \{\par
+        Scanner scanner = new Scanner(System.in);\par
+        System.out.print("Enter base of the triangle: ");\par
+        double base = scanner.nextDouble();\par
+        System.out.print("Enter height of the triangle: ");\par
+        double height = scanner.nextDouble();\par
+        double area = 0.5 * base * height;\par
+        System.out.println("Area of the triangle: " + area);\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+Enter base of the triangle: 5\par
+Enter height of the triangle: 4\par
+Area of the triangle: 10.0\tab */\b\par
+\par
+    7. Program to perform arithmetic expression (1010/5+3-14/2): \par
+\b0 public class ArithmeticExpression \{\par
+    public static void main(String[] args) \{\par
+        int result = 10 * 10 / 5 + 3 - 1 * 4 / 2;\par
+        System.out.println("Result of the expression: " + result);\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Result of the expression: 23\tab */\par
+\par
+\b     8. Program to check whether the number is positive, negative, or zero: \par
+\b0 import java.util.Scanner;\par
+public class NumberCheck \{\par
+    public static void main(String[] args) \{\par
+        Scanner scanner = new Scanner(System.in);\par
+        System.out.print("Enter a number: ");\par
+        int number = scanner.nextInt();\par
+\par
+        if (number > 0) \{\par
+            System.out.println("The number is positive.");\par
+        \} else if (number < 0) \{\par
+            System.out.println("The number is negative.");\par
+        \} else \{\par
+            System.out.println("The number is zero.");\par
+        \}\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+Enter a number: -5\par
+The number is negative.\tab */\b0\par
+\b\par
+    9. Program that takes a number (1-7) and prints the corresponding day of the week using a switch statement: \par
+\b0 import java.util.Scanner;\par
+\par
+public class DayOfWeek \{\par
+    public static void main(String[] args) \{\par
+        Scanner scanner = new Scanner(System.in);\par
+        System.out.print("Enter a number (1-7): ");\par
+        int day = scanner.nextInt();\par
+\par
+        switch (day) \{\par
+            case 1:\par
+                System.out.println("Monday");\par
+                break;\par
+            case 2:\par
+                System.out.println("Tuesday");\par
+                break;\par
+            case 3:\par
+                System.out.println("Wednesday");\par
+                break;\par
+            case 4:\par
+                System.out.println("Thursday");\par
+                break;\par
+            case 5:\par
+                System.out.println("Friday");\par
+                break;\par
+            case 6:\par
+                System.out.println("Saturday");\par
+                break;\par
+            case 7:\par
+                System.out.println("Sunday");\par
+                break;\par
+            default:\par
+                System.out.println("Invalid input! Please enter a number between 1 and 7.");\par
+        \}\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+Enter a number (1-7): 3\par
+Wednesday\tab\b0 */\par
+\b\par
+    10. Program to print 1 to 100 using a do...while loop: \par
+\b0 public class PrintNumbers \{\par
+    public static void main(String[] args) \{\par
+        int i = 1;\par
+        do \{\par
+            System.out.println(i);\par
+            i++;\par
+        \} while (i <= 100);\par
+    \}\par
+\}\par
+\par
+\b 12 Write a program to print following pattern.\par
+( i )\par
+1\par
+12 \par
+123 \par
+1234 \par
+12345 \par
+\par
+\b0 public class NumberPattern \{\par
+    public static void main(String[] args) \{\par
+        // Loop for number of lines (5 lines)\par
+        for (int i = 1; i <= 5; i++) \{\par
+            // Loop to print numbers from 1 to i\par
+            for (int j = 1; j <= i; j++) \{\par
+                System.out.print(j);  // Print numbers without newline\par
+            \}\par
+            System.out.println();  // Move to the next line after each row\par
+        \}\par
+    \}\par
+\}\par
+\b ( ii )\par
+A\par
+ABA\par
+ABCA\par
+ABCDA\par
+ABCDEA\par
+\par
+\b0 public class LetterPattern \{\par
+    public static void main(String[] args) \{\par
+        // Loop for number of lines (5 lines)\par
+        for (int i = 1; i <= 5; i++) \{\par
+            // Loop to print letters from 'A' to 'A' + i - 1\par
+            for (char c = 'A'; c < 'A' + i; c++) \{\par
+                System.out.print(c);  // Print the current character\par
+            \}\par
+            // After printing the characters, print the last character again for the next pattern\par
+            if (i > 1) \{\par
+                System.out.print('A');\par
+            \}\par
+            System.out.println();  // Move to the next line after each row\par
+        \}\par
+    \}\par
+\}\par
+\par
+ \b ( iii )\par
+A\par
+BB\par
+CCC\par
+DDDD\par
+EEEEE\par
+\b0\par
+public class CharacterPattern \{\par
+    public static void main(String[] args) \{\par
+        // Loop to print 5 lines\par
+        for (char c = 'A'; c <= 'E'; c++) \{\par
+            // Loop to print the character 'c' multiple times (based on its row)\par
+            for (int i = 1; i <= (c - 'A' + 1); i++) \{\par
+                System.out.print(c);  // Print the character c\par
+            \}\par
+            System.out.println();  // Move to the next line after each row\par
+        \}\par
+    \}\par
+\}\par
+}
+ 
