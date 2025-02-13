@@ -1,0 +1,342 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs30\lang9 NAME : SHIYAL PRADIP J.\par
+CLASS : D\par
+ROLL NO : 29\par
+SUBJECT : JAVA\par
+\par
+
+\pard\sa200\sl276\slmult1\qc LABASSIGNMENT - 2\par
+
+\pard\sa200\sl276\slmult1\b0\par
+\b  1. Program to print numbers from 1 to 10, but stop printing when the number 7 is reached using `break`.\par
+\b0 public class BreakExample \{\par
+    public static void main(String[] args) \{\par
+        for (int i = 1; i <= 10; i++) \{\par
+            if (i == 7) \{\par
+                break;\par
+            \}\par
+            System.out.println(i);\par
+        \}\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\tab */\par
+\par
+\b 2. Program to print numbers from 1 to 10, but skip printing the number 5 using `continue`.\par
+\b0\par
+\par
+public class ContinueExample \{\par
+    public static void main(String[] args) \{\par
+        for (int i = 1; i <= 10; i++) \{\par
+            if (i == 5) \{\par
+                continue;\par
+            \}\par
+            System.out.println(i);\par
+        \}\par
+    \}\par
+\}\par
+/*\tab\b Output\b0\par
+1\par
+2\par
+3\par
+4\par
+6\par
+7\par
+8\par
+9\par
+10\tab */\par
+\par
+\b 3. Program to calculate the sum of all elements in a one-dimensional array of integers.\b0\par
+public class ArraySum \{\par
+    public static void main(String[] args) \{\par
+        int[] numbers = \{1, 2, 3, 4, 5\};\par
+        int sum = 0;\par
+        for (int num : numbers) \{\par
+            sum += num;\par
+        \}\par
+        System.out.println("Sum of all elements: " + sum);\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Sum of all elements: 15\tab\tab */\par
+\b\par
+ 4. Program to calculate the sum of all elements in a jagged array of integers.\par
+\b0 public class JaggedArraySum \{\par
+    public static void main(String[] args) \{\par
+        int[][] jaggedArray = \{\par
+            \{1, 2, 3\},\par
+            \{4, 5\},\par
+            \{6, 7, 8, 9\}\par
+        \};\par
+        int sum = 0;\par
+        for (int[] row : jaggedArray) \{\par
+            for (int element : row) \{\par
+                sum += element;\par
+            \}\par
+        \}\par
+        System.out.println("Sum of all elements in jagged array: " + sum);\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Sum of all elements in jagged array: 45\tab */\par
+\b\par
+5. Program to create a Car class with attributes and methods.\par
+\b0 class Car \{\par
+    private String brand;\par
+    private String model;\par
+    private int year;\par
+\par
+    public void setBrand(String brand) \{\par
+        this.brand = brand;\par
+    \}\par
+\par
+    public void setModel(String model) \{\par
+        this.model = model;\par
+    \}\par
+\par
+    public void setYear(int year) \{\par
+        this.year = year;\par
+    \}\par
+\par
+    public void displayCarInfo() \{\par
+        System.out.println("Car Brand: " + brand);\par
+        System.out.println("Car Model: " + model);\par
+        System.out.println("Car Year: " + year);\par
+    \}\par
+\}\par
+\par
+public class CarExample \{\par
+    public static void main(String[] args) \{\par
+        Car car = new Car();\par
+        car.setBrand("Toyota");\par
+        car.setModel("Corolla");\par
+        car.setYear(2022);\par
+        car.displayCarInfo();\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Car Brand: Toyota\par
+Car Model: Corolla\par
+Car Year: 2022\tab */\par
+\par
+\b 6. Program to implement encapsulation in a Person class.\par
+\b0 class Person \{\par
+    private String name;\par
+    private int age;\par
+    private String address;\par
+\par
+    // Getter and Setter methods\par
+    public String getName() \{\par
+        return name;\par
+    \}\par
+\par
+    public void setName(String name) \{\par
+        this.name = name;\par
+    \}\par
+\par
+    public int getAge() \{\par
+        return age;\par
+    \}\par
+\par
+    public void setAge(int age) \{\par
+        this.age = age;\par
+    \}\par
+\par
+    public String getAddress() \{\par
+        return address;\par
+    \}\par
+\par
+    public void setAddress(String address) \{\par
+        this.address = address;\par
+    \}\par
+\}\par
+\par
+public class EncapsulationExample \{\par
+    public static void main(String[] args) \{\par
+        Person person = new Person();\par
+        person.setName("John Doe");\par
+        person.setAge(30);\par
+        person.setAddress("123 Main St");\par
+\par
+        System.out.println("Name: " + person.getName());\par
+        System.out.println("Age: " + person.getAge());\par
+        System.out.println("Address: " + person.getAddress());\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Name: John Doe\par
+Age: 30\par
+Address: 123 Main St\tab */\par
+\par
+\b  7. Program to demonstrate abstraction.\par
+\b0 abstract class Animal \{\par
+    abstract void sound();\par
+\}\par
+\par
+class Dog extends Animal \{\par
+    void sound() \{\par
+        System.out.println("Bark");\par
+    \}\par
+\}\par
+\par
+public class AbstractionExample \{\par
+    public static void main(String[] args) \{\par
+        Animal animal = new Dog();\par
+        animal.sound();\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Bark\tab /*\par
+\par
+\b 8. Program to demonstrate method overloading and method overriding.\par
+\b0 class Animal \{\par
+    void sound() \{\par
+        System.out.println("Animal sound");\par
+    \}\par
+\par
+    // Method Overloading\par
+    void sound(String type) \{\par
+        System.out.println(type + " sound");\par
+    \}\par
+\}\par
+\par
+class Dog extends Animal \{\par
+    @Override\par
+    void sound() \{\par
+        System.out.println("Bark");\par
+    \}\par
+\}\par
+\par
+public class MethodOverloadingAndOverriding \{\par
+    public static void main(String[] args) \{\par
+        Animal animal = new Dog();\par
+        animal.sound(); // Overridden method\par
+        animal.sound("Dog"); // Overloaded method\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Bark\par
+Dog sound\tab\tab */\par
+\par
+\b 9. Program to demonstrate multilevel inheritance.\par
+\b0 class Animal \{\par
+    void eat() \{\par
+        System.out.println("Eating...");\par
+    \}\par
+\}\par
+\par
+class Mammal extends Animal \{\par
+    void walk() \{\par
+        System.out.println("Walking...");\par
+    \}\par
+\}\par
+\par
+class Dog extends Mammal \{\par
+    void bark() \{\par
+        System.out.println("Barking...");\par
+    \}\par
+\}\par
+\par
+public class MultilevelInheritance \{\par
+    public static void main(String[] args) \{\par
+        Dog dog = new Dog();\par
+        dog.eat();  // Inherited from Animal\par
+        dog.walk(); // Inherited from Mammal\par
+        dog.bark(); // Dog's own method\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Eating...\par
+Walking...\par
+Barking...\tab */\par
+\b\par
+10. Program to demonstrate hierarchical inheritance.\par
+\b0 class Animal \{\par
+    void eat() \{\par
+        System.out.println("Eating...");\par
+    \}\par
+\}\par
+\par
+class Dog extends Animal \{\par
+    void bark() \{\par
+        System.out.println("Barking...");\par
+    \}\par
+\}\par
+\par
+class Cat extends Animal \{\par
+    void meow() \{\par
+        System.out.println("Meowing...");\par
+    \}\par
+\}\par
+\par
+public class HierarchicalInheritance \{\par
+    public static void main(String[] args) \{\par
+        Dog dog = new Dog();\par
+        dog.eat();\par
+        dog.bark();\par
+\par
+        Cat cat = new Cat();\par
+        cat.eat();\par
+        cat.meow();\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Eating...\par
+Barking...\par
+Eating...\par
+Meowing...\tab\tab */\par
+\par
+\b 11. Program to demonstrate constructor.\par
+\b0 class Car \{\par
+    Car() \{\par
+        System.out.println("Car object is created.");\par
+    \}\par
+\par
+    void display() \{\par
+        System.out.println("Displaying car information.");\par
+    \}\par
+\}\par
+\par
+public class ConstructorExample \{\par
+    public static void main(String[] args) \{\par
+        Car car = new Car(); // Constructor is called\par
+        car.display();\par
+    \}\par
+\}\par
+/*\tab\b Output\par
+\b0 Car object is created.\par
+Displaying car information.\tab\tab */\par
+\par
+\b 12. Program to demonstrate constructor overloading.\par
+\b0 class Car \{\par
+    String brand;\par
+    int year;\par
+\par
+    // Constructor 1\par
+    Car(String brand) \{\par
+        this.brand = brand;\par
+        System.out.println("Car brand: " + brand);\par
+    \}\par
+\par
+    // Constructor 2\par
+    Car(String brand, int year) \{\par
+        this.brand = brand;\par
+        this.year = year;\par
+        System.out.println("Car brand: " + brand + ", Year: " + year);\par
+    \}\par
+\}\par
+\par
+public class ConstructorOverloading \{a\par
+    public static void main(String[] args) \{\par
+        Car car1 = new Car("Toyota");\par
+        Car car2 = new Car("Honda", 2022);\par
+    \}\par
+\}\fs22\par
+}
+ 
